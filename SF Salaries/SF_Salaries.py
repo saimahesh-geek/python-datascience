@@ -85,3 +85,5 @@ print(sum(sal['JobTitle'].apply(lambda x:chief_string(x))))
 #Is there a correlation between length of the job Title string and salary?
 sal['Title_len'] = sal['JobTitle'].apply(len)
 print(sal[['Title_len', 'JobTitle']].corr())
+
+#Note: https://www.kaggle.com/kaggle/sf-salaries (San Francisco city employee salary data)
